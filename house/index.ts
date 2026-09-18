@@ -1,10 +1,25 @@
 function setup() {
     createCanvas(700, 700);
-    background("lightblue");
-
-    fill("red");
-    rect(75, 300, 260, 300); //rotes Haus
+    background("lightblue"); //lightblue bg
     
+    // red rectangle
+    fill("red"); 
+    rect(90, 310, 250, 300); 
+
+    // brown triangle
     fill("saddlebrown");
-    triangle(20, 300, 200, 130, 400, 300); //braunes Dach
+    triangle(35, 320, 210, 180, 395, 320);
+
+    // yellow door
+    fill("yellow");
+    rect(180, 470, 70, 140);
+
+    // tree
+    fill("saddlebrown");
+    rect(510, 370, 80, 240);
+
+    fill("green");
+    circle(470, 350, 150);
+    circle(600, 350, 150);
+    circle(530, 250, 150);
 }
