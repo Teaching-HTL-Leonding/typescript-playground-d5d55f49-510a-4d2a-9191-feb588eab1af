@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(250, 115);
+  noFill();
     
   // blue ring
   stroke("blue");
