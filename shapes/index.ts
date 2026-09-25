@@ -1,31 +1,25 @@
 function setup() {
-    // Create the canvas (German: "Leinwand")
-    // Paramters are width and height
-    createCanvas(400, 500);
+    createCanvas(700, 700);
+    background("lightblue"); //lightblue bg
+    
+    // red building
+    fill("red"); 
+    rect(90, 310, 250, 300); 
 
-    // Set background color
-    background("pink");
+    // brown triangle
+    fill("saddlebrown");
+    triangle(35, 320, 210, 170, 395, 320);
 
-    // Set line color and thickness (=weight)
-    stroke("white");
-    strokeWeight(5);
+    // yellow door
+    fill("yellow");
+    rect(180, 470, 70, 140);
 
-    // Fill color
-    fill("skyblue");
+    // tree
+    fill("saddlebrown");
+    rect(510, 370, 80, 240);
 
-    // Draw a line
-    line(20, 20, 380, 20);
-
-    // Draw a rectangle
-    rect(20, 40, 360, 20);
-
-    // Do not fill the following shapes
-    noFill();
-
-    // Draw a circle
-    circle(200, 260, 360);
-
-    // Draw a triangle
-    fill("lime");
-    triangle(100, 300, 200, 200, 300, 300);
+    fill("green");
+    circle(470, 350, 150);
+    circle(600, 350, 150);
+    circle(530, 250, 150);
 }
