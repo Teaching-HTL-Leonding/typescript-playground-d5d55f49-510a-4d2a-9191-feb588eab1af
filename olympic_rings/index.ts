@@ -1,6 +1,8 @@
 function setup() {
-  createCanvas(250, 115);
+  createCanvas(500, 230);
   noFill();
+
+  scale(2)
     
   // blue ring
   stroke("blue");
@@ -21,5 +23,5 @@ function setup() {
 
   // green ring
   stroke("green");
-  circle(160, 75, 70);
+  circle(170, 75, 70);
 }
