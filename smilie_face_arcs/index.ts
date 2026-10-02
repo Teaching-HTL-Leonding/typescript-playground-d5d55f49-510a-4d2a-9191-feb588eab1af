@@ -14,6 +14,7 @@ function setup() {
   circle(260, 130, 30); // right eye
 
   // mouth
+  strokeWeight(10);
   noFill();
   arc(200, 250, 180, 110, 15, 165);
 }
