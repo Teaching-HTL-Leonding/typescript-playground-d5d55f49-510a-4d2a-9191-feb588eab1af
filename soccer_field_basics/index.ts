@@ -3,7 +3,7 @@
 const SCALE = 6;
 
 // Margin around the field (i.e. distance from edge to the field)
-const MARGIN = 4;
+const MARGIN = 4    
 
 function setup() {
     // We must calculate the size of the canvas using the constants.
@@ -32,7 +32,7 @@ function setup() {
     // TODO: Draw the soccer field as close as possible to a real soccer field.
     // <<< ADD YOUR CODE HERE
 
-    // outline of the soccer field
+    // touchline
     rect(0, 0, 100, 70);
     
     // centre circle
@@ -49,4 +49,27 @@ function setup() {
 
     // corner arc
     arc(0, 0, 2, 2, 0, 90); // top left
+    arc(100, 0, 2, 2, 90, 180); // top right
+    arc(0, 70, 2, 2, 270, 0); // bottom left
+    arc(100, 70, 2, 2, 180, 270); // bottom right
+
+
+    // penalty arc
+    circle(11, 35, 18.3); // left
+    circle(89, 35, 18.3); // right
+
+    // penalty area
+    fill("green");
+    rect(0, 14.84, 16.5, 40.32); // left
+    rect(83.5, 14.84, 16.5, 40.32); // right
+
+    // goal area
+    rect(0, 25.84, 5.5, 18.32); // left
+    rect(94.5, 25.84, 5.5, 18.32); // right
+
+    // penalty marks
+    fill("white");
+    circle(11, 35, 1.5); // left
+    circle(89, 35, 1.5); // right
+
 }
