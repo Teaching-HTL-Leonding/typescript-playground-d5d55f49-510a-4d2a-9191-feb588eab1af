@@ -72,4 +72,9 @@ function setup() {
     circle(11, 35, 1.5); // left
     circle(89, 35, 1.5); // right
 
+    // goals
+    noFill();
+    rect(-2, 31.34, 2, 7.32); // left
+    rect(100, 31.34, 2, 7.32); // right
+
 }
