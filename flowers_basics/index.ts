@@ -1,4 +1,6 @@
-// <<< ADD CONSTANTS HERE (if you need them)
+const PETAL_DIAMETER_LEFT = 70;
+const PETAL_DIAMETER_RIGHT = 80;
+const CENTER_DIAMETER = 65
 
 function setup() {
 
@@ -19,14 +21,14 @@ function setup() {
   // petals
   strokeWeight(2);
   fill("lime");
-  circle(50, 0, 80); // right petal
-  circle(0, 50, 80); // bottom petal
-  circle(-50, 0, 80); // left petal
-  circle(0, -50, 80); // top petal
+  circle(50, 0, PETAL_DIAMETER_RIGHT); // right petal
+  circle(0, 50, PETAL_DIAMETER_RIGHT); // bottom petal
+  circle(-50, 0, PETAL_DIAMETER_RIGHT); // left petal
+  circle(0, -50, PETAL_DIAMETER_RIGHT); // top petal
 
   // yellow circle
   fill("yellow");
-  circle(0, 0, 65);
+  circle(0, 0, CENTER_DIAMETER);
 
   pop();
 
@@ -43,13 +45,13 @@ function setup() {
   // petals
   noStroke();
   fill("lime");
-  circle(-44, 31.9, 70); // bottom left petal
-  circle(-44, -31.9, 70); // top left petal
-  circle(15.5, -47.5, 70); // top right petal
-  circle(50, 0, 70); // right petal
-  circle(15.5, 47.5, 70); // bottom right petal
+  circle(-44, 31.9, PETAL_DIAMETER_LEFT); // bottom left petal
+  circle(-44, -31.9, PETAL_DIAMETER_LEFT); // top left petal
+  circle(15.5, -47.5, PETAL_DIAMETER_LEFT); // top right petal
+  circle(50, 0, PETAL_DIAMETER_LEFT); // right petal
+  circle(15.5, 47.5, PETAL_DIAMETER_LEFT); // bottom right petal
 
   // yellow circle
   fill("yellow");
-  circle(0, 0, 65);
+  circle(0, 0, CENTER_DIAMETER);
 }
