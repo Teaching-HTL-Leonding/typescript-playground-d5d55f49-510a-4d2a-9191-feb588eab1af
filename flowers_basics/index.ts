@@ -1,17 +1,19 @@
 const PETAL_DIAMETER_LEFT = 70;
 const PETAL_DIAMETER_RIGHT = 80;
-const CENTER_DIAMETER = 65
-const PETAL_OFFSET = 50
+const CENTER_DIAMETER = 65;
+const PETAL_OFFSET = 50;
+const SCALE = 1.3;
 
 function setup() {
 
-  angleMode(DEGREES),
-  createCanvas(700, 600);
+  angleMode(DEGREES);
+  createCanvas(700 * SCALE, 600 * SCALE);
+  scale(SCALE);
 
   push();
 
   // right flower
-  translate(590, 200);
+  translate(430, 220);
   
   // green arc
   stroke("green");
@@ -35,9 +37,9 @@ function setup() {
 
   // left flower
   push();
-  translate(100, 200);
+  translate(150, 220);
 
-  // green ark
+  // green arc
   noFill();
   stroke("green");
   strokeWeight(10);
@@ -49,10 +51,12 @@ function setup() {
   circle(-44, 31.9, PETAL_DIAMETER_LEFT); // bottom left petal
   circle(-44, -31.9, PETAL_DIAMETER_LEFT); // top left petal
   circle(15.5, -47.5, PETAL_DIAMETER_LEFT); // top right petal
-  circle(50, 0, PETAL_DIAMETER_LEFT); // right petal
+  circle(PETAL_OFFSET, 0, PETAL_DIAMETER_LEFT); // right petal
   circle(15.5, 47.5, PETAL_DIAMETER_LEFT); // bottom right petal
 
   // yellow circle
   fill("yellow");
   circle(0, 0, CENTER_DIAMETER);
+
+  pop();
 }
