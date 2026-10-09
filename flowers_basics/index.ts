@@ -10,8 +10,6 @@ function setup() {
   createCanvas(700 * SCALE, 600 * SCALE);
   scale(SCALE);
 
-  push();
-
   // right flower
   translate(430, 220);
   
@@ -33,11 +31,8 @@ function setup() {
   fill("yellow");
   circle(0, 0, CENTER_DIAMETER);
 
-  pop();
-
   // left flower
-  push();
-  translate(150, 220);
+  translate(-300, 0);
 
   // green arc
   noFill();
@@ -57,6 +52,4 @@ function setup() {
   // yellow circle
   fill("yellow");
   circle(0, 0, CENTER_DIAMETER);
-
-  pop();
 }
