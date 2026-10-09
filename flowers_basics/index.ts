@@ -1,6 +1,7 @@
 const PETAL_DIAMETER_LEFT = 70;
 const PETAL_DIAMETER_RIGHT = 80;
 const CENTER_DIAMETER = 65
+const PETAL_OFFSET = 50
 
 function setup() {
 
@@ -21,10 +22,10 @@ function setup() {
   // petals
   strokeWeight(2);
   fill("lime");
-  circle(50, 0, PETAL_DIAMETER_RIGHT); // right petal
-  circle(0, 50, PETAL_DIAMETER_RIGHT); // bottom petal
-  circle(-50, 0, PETAL_DIAMETER_RIGHT); // left petal
-  circle(0, -50, PETAL_DIAMETER_RIGHT); // top petal
+  circle(PETAL_OFFSET, 0, PETAL_DIAMETER_RIGHT); // right petal
+  circle(0, PETAL_OFFSET, PETAL_DIAMETER_RIGHT); // bottom petal
+  circle(-PETAL_OFFSET, 0, PETAL_DIAMETER_RIGHT); // left petal
+  circle(0, -PETAL_OFFSET, PETAL_DIAMETER_RIGHT); // top petal
 
   // yellow circle
   fill("yellow");
