@@ -5,11 +5,15 @@ function setup() {
 
 function mouseMoved() {
   background("lightblue");
-  
-  noFill();
-  circle(mouseX, mouseY, 25);
-  circle(mouseX, mouseY, 40);
 
-  line(mouseX - 25, mouseY, mouseX + 25, mouseY);
-  line(mouseX, mouseY - 25, mouseX, mouseY + 25);
+  const snap: number = 50;       // marker must snap every 40 pixels
+  const markerSize: number = 10; // size of marker
+
+  const x: number = round(mouseX / snap) * snap;
+  const y: number = round(mouseY / snap) * snap;
+
+  line(x - 20, y, x + 20, y);
+  line(x, y - 20, x, y + 20);
+
+  text(`${x}/${y}`, 5, height - 5)
 }
