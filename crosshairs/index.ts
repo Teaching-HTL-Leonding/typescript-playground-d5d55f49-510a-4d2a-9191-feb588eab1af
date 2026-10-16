@@ -5,10 +5,11 @@ function setup() {
 
 function mouseMoved() {
   background("lightblue");
+  
   noFill();
+  circle(mouseX, mouseY, 25);
+  circle(mouseX, mouseY, 40);
 
-  circle(mouseX, mouseY, 15);
-  circle(mouseX, mouseY, 30);
-  line(mouseX - 20, mouseY, mouseX + 20, mouseY);
-  line(mouseX, mouseY - 20, mouseX, mouseY + 20);
+  line(mouseX - 25, mouseY, mouseX + 25, mouseY);
+  line(mouseX, mouseY - 25, mouseX, mouseY + 25);
 }
