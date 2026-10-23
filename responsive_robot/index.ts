@@ -28,9 +28,9 @@ function setup() {
 
   // mouth
   const mouthX: number = headX + headWidth * 0.25;
-  const mouthY: number = headY + headWidth * 0.70;
+  const mouthY: number = headY + headHeight * 0.70;
   const mouthWidth: number = headWidth / 2;
-  const mouthHeight: number = headWidth * 0.1;
+  const mouthHeight: number = headHeight * 0.1;
 
   push();
   fill("white");
