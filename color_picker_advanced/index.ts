@@ -1,6 +1,7 @@
 function setup() {
     createCanvas(360, 200);
     colorMode(HSB); 
+    background(0, 100, 100);
 }
 
 function mouseMoved() {
