@@ -23,12 +23,10 @@ function mouseClicked() {
     textAlign(CENTER);
     if (mouseX <= width / 3) {
         message = "Orange";
-        text(message, width / 2, height * 0.85)
     } else if (mouseX <= 2 * width / 3) {
         message = "Green";
-        text(message, width / 2, height * 0.85)
     } else {
         message = "Red";
-        text(message, width / 2, height * 0.85)
     }
+    text(message, width / 2, height * 0.85);
 }
