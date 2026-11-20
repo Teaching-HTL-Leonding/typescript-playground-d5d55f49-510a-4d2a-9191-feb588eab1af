@@ -28,5 +28,5 @@ function mouseClicked() {
     } else {
         message = "Red";
     }
-    text(message, width / 2, height * 0.85);
+    text(message, width / 2, height * 0.87);
 }
