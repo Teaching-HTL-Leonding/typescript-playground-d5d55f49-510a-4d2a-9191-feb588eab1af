@@ -18,7 +18,6 @@ function mouseMoved() {
 
     // arcs
     noFill();
-    // ellipse(centerX, centerY, ellipseW, ellipseH);
     stroke("red");
     arc(centerX, centerY, ellipseW, ellipseH, 0, 90);
     stroke("yellow");
